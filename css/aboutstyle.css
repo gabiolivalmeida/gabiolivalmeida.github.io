@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (min-width: 1280px) and (max-width: 3840px) {
+
+    body{
+        background-color: rgb(239, 239, 239);
+        margin: 0;
+    }
+
+    #hero-section{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-image: linear-gradient(100deg,rgba(196, 0, 203),rgba(245, 149, 48));
+        height: 900px;
+        align-content: center;
+        text-align: center;
+    }
+
+    header{
+        align-content: center;
+    }
+
+    nav{
+        grid-row: 1;
+        margin: 60px 0;
+    }
+
+    #burger-icon {
+        display: none;
+    }
+
+    a{
+        color: rgb(255, 251, 242);
+        font-family:Lexend Deca;
+        text-decoration: none; 
+        border-radius: 4px;
+    }
+
+    #current-page {
+        text-decoration: underline;
+        font-weight: 700;
+    }
+
+    #projects-page:hover{
+        background-color: rgb(150, 57, 254);
+        padding: 8px 16px 8px 16px;
+        font-weight: 700;
+    }
+
+    #projects-page:active{
+        background-color: rgb(91,0,193);
+        font-weight: 700;
+    }
+
+    #header-description {
+        font-size: 24pt;
+        color: rgb(255, 251, 242);
+    }
+
+    p{
+        font-family: Roboto;
+        line-height: 25.4px;
+    }
+
+    nav ul {
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 24px;
+        font-size: 20px;
+        color: white;
+    }
+
+    h1{
+        margin: 0;
+        font-size: 64pt;
+        color: rgb(255, 251, 242);
+    }
+
+    h1, h2, h3{
+        font-family: Lexend Deca;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        margin-top: 0;
+    }
+
+    main{  
+        margin: 32px 60px 60px 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+    }
+
+    #tools {
+        grid-column: 1;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 16px;
+        justify-items: center;
+        padding-top: 24px;
+    }
+
+
+    .tool-icon {
+        width: 114px;
+        max-height: 132px;
+        background-color: white;
+        justify-items: center;
+        text-align: center;
+        padding: 16px;
+        border-radius: 4px;
+    }
+
+    .tool-icon p {
+        margin: 8px 0 0 0;
+    }
+
+    /* #tools h3 {
+        grid-column: span 4;
+        font-size: 20px;
+    } */
+
+    section h3 {
+        margin: 24px 0 0 0;
+        font-size: 20px;
+    }
+
+    #tools img, #education-experience img, #professional-experience img  {
+        max-width: 66px;
+    }
+
+    #left-column {
+        grid-column: 1;
+    }
+
+    #right-column {
+        grid-column: 2;
+    }
+
+    #right-column h3 {
+        font-size: 20px;
+    }
+
+    #main-photo {
+        width: auto;
+        height: auto;
+    }
+
+    #main-photo img{
+        object-fit: cover;
+        width: 82%;
+    }
+
+    .education-history, .professional-history {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 16px;
+        margin: 24px 0 24px 0;
+    }
+
+    .education-history p, .professional-history p {
+        line-height: 25.6px;
+        grid-column: 2;
+        margin: 0;
+    }
+
+    #general-description {
+        font-weight: 500;
+        line-height: 32px;
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .education-history img {
+        grid-row: span 3;
+    }
+
+    .professional-history img {
+        grid-row: span 3;
+    }
+
+    .company {
+        grid-column: 2;
+        font-weight: 800;
+    }
+
+    .exp-description {
+        grid-column: span 2;
+        padding: 8px 0 8px 0;
+    }
+
+    .date {
+        grid-column: 2;
+        font-size: 14px;
+        color: rgb(98, 98, 98);
+    }
+
+    .ux-ui {
+        grid-column: 2;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        background-image: linear-gradient(100deg,rgba(196, 0, 203),rgba(245, 149, 48));
+        align-items:center;
+        color: white;
+        text-align: left;
+        padding: 60px;
+    }
+
+    footer h2{
+        grid-column: span 2;
+    }
+
+    footer a{
+
+        border-radius: 4px;
+        margin: 16px 0 16px 0;
+        font-family: Roboto;
+        font-weight: 400;
+        letter-spacing: .5px;
+    }
+
+    footer p{
+        font-weight: 300;
+    }
+
+    footer a:hover{ 
+        padding: 8px;
+        background-color: rgb(150, 57, 254);
+        font-weight: 600;
+    }
+
+     footer a:active{
+        background-color: rgb(91,0,193);
+        font-weight: 700;
+    }
+
+    footer i{
+        padding: 0 8px 0 8px;
+    }
+
+    .social{
+        grid-row: 2;
+        justify-self: end;
+        align-self: flex-end;
+        padding-bottom: 4px;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        align-self: flex-end;
+        grid-row: 2;
+    }
+
+    details {
+        display: none;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    body{
+        background-color: rgb(239, 239, 239);
+        margin: 0;
+    }
+
+    #hero-section{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 56px 1fr;
+        background-image: linear-gradient(100deg,rgba(196, 0, 203),rgba(245, 149, 48));
+        height: 900px;
+        align-content: center;
+        text-align: center;
+        padding: 16px;
+        grid-template-columns: 1; 
+    }
+
+    header{
+        align-content: center;
+    }
+
+    nav{
+        margin: 0;
+        grid-row: 1;
+    }
+
+    h1{
+        font-size: 36px;
+        color: rgb(255, 251, 242);
+    }
+
+    nav ul {
+        display: none;
+    }
+
+     #header-description{
+        font-size: 16px;
+        color: rgb(255, 251, 242);
+    }
+
+    h1, h2, h3{
+        font-family: Lexend Deca;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        margin-top: 0;
+    }
+
+    p{
+        font-family: Roboto;
+        line-height: 25.4px;
+    }
+
+    a{
+        color: rgb(255, 251, 242);
+        font-family:Lexend Deca;
+        border-radius: 4px;
+        text-decoration: none; 
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    #tools {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 16px;
+        justify-content: center;
+        padding: 24px 0 24px 0;
+    }
+
+
+    .tool-icon {
+        width: 114px;
+        max-height: 132px;
+        background-color: white;
+        justify-items: center;
+        text-align: center;
+        padding: 16px;
+        border-radius: 4px;
+    }
+
+    .tool-icon p {
+        margin: 8px 0 0 0;
+    }
+
+    /* #tools h3 {
+        grid-column: span 4;
+        font-size: 20px;
+    } */
+
+    section h3 {
+        margin: 24px 0 0 0;
+        font-size: 20px;
+    }
+
+    #tools img, #education-experience img, #professional-experience img  {
+        max-width: 66px;
+    }
+
+    #left-column {
+        order: 1;
+        grid-column: 1;
+    }
+
+    #right-column {
+        grid-column: 2;
+    }
+
+    #right-column h3 {
+        font-size: 20px;
+    }
+
+    #main-photo {
+        width: auto;
+        height: auto;
+    }
+
+    #main-photo img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .education-history, .professional-history {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 16px;
+        margin: 24px 0 24px 0;
+    }
+
+    .education-history p, .professional-history p {
+        line-height: 25.6px;
+        grid-column: 2;
+        margin: 0;
+    }
+
+    #general-description {
+        font-weight: 500;
+        line-height: 32px;
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+
+    .education-history img {
+        grid-row: span 3;
+    }
+
+    .professional-history img {
+        grid-row: span 3;
+    }
+
+    .company {
+        grid-column: 2;
+        font-weight: 800;
+    }
+
+    .exp-description {
+        grid-column: span 2;
+        padding: 8px 0 8px 0;
+    }
+
+    .date {
+        grid-column: 2;
+        font-size: 14px;
+        color: rgb(98, 98, 98);
+    }
+
+    .ux-ui {
+        grid-column: 2;
+    }
+
+    p.exp-description {
+        grid-column: span 2;
+    }
+
+    .contact{
+        gap: 24px;
+        align-self: flex-end;
+        grid-row: 2;
+    }
+
+    footer {
+        padding: 16px;
+        display: grid;
+        grid-template-columns: 1fr .2fr;
+        background-image: linear-gradient(100deg,rgba(196, 0, 203),rgba(245, 149, 48));
+        text-align: center;
+        color: white;
+        text-align: left;
+    }
+
+    footer h2{
+        grid-column: span 2;
+    }
+
+    footer p {
+        font-weight: 300;
+    }
+
+    footer a{
+        border-radius: 4px;
+        margin: 16px 0 16px 0;
+        font-family: Roboto;
+        font-weight: 500;
+        letter-spacing: .5px;
+    }
+
+
+    #phone, #adress {
+        margin-bottom:16px;
+    }
+
+    #phone p, #adress p, #email p {
+        padding:2px 0 2px 0;
+        margin: 0;
+    }
+
+    .social {
+        grid-row: 2;
+        align-self: end;
+        padding-bottom: 4px;
+        justify-self: end;
+    }
+
+    #adress, #phone, #email { 
+        width: auto;
+    }
+
+    #adress i, #phone i, #email i{
+        padding: 0 0 0 8px;
+    }
+
+    .dropdown-content {
+        width: 60%;
+        position: absolute;
+        right:0;
+        left:100;
+        top:100;
+        background-color: #f9f9f9;
+        margin-right: 16px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-radius: 4px;
+    }
+
+
+    details a{
+        color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 16px;
+    }
+
+    summary {
+        text-align: end;
+        list-style: none;
+    }
+
+    details i {
+        color: white;
+        position: relative;
+        padding: 16px 0px 0px 16px;
+    }
+
+    details:open.dropdown-content {
+        margin: 40px;
+    }
+
+
+    footer a:active{
+        padding: 8px;
+        background-color: rgb(91,0,193);
+        font-weight: 700;
+    }
+
+}

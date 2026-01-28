@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@media (min-width: 1280px) and (max-width: 3840px) {
+
+    body{
+        background-color: rgb(239, 239, 239);
+        margin: 0;
+    }
+
+    #hero-section{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-image: linear-gradient(100deg,rgba(196, 0, 203),rgba(245, 149, 48));
+        height: 900px;
+        align-content: center;
+        text-align: center;
+    }
+
+    header{
+        align-content: center;
+    }
+
+    nav{
+        grid-row: 1;
+        margin: 60px 0;
+    }
+
+    #burger-icon {
+        display: none;
+    }
+
+    a{
+        color: rgb(255, 251, 242);
+        font-family:Lexend Deca;
+        border-radius: 4px;
+        text-decoration: none; 
+    }
+
+    #current-page {
+        text-decoration: underline;
+        font-weight: 700;
+    }
+
+    #about-page:hover {
+        background-color: rgb(150, 57, 254);
+        padding: 8px 16px 8px 16px;
+        font-weight: 700;
+    }
+
+    #about-page:active {
+        background-color: rgb(91,0,193);
+        font-weight: 700;
+    }
+
+    #header-description {
+        font-size: 24pt;
+        color: rgb(255, 251, 242);
+    }
+
+    p{
+        font-family: Roboto;
+        line-height: 25.4px;
+    }
+
+    nav ul {
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 24px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+
+    #tabs{
+        display: none;
+    }
+
+    main{  
+        margin: 60px;
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        gap: 112px;
+    }
+
+    h1{
+        margin: 0;
+        font-size: 64pt;
+        color: rgb(255, 251, 242);
+    }
+
+    h1, h2, h3{
+        font-family: Lexend Deca;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        margin-top: 0;
+    }
+
+    article img{
+        width: 50%;
+        order: 1;
+
+    }
+
+    article{
+        border-radius: 10px;
+        gap: 32px;;
+        align-items: center;
+        padding: 32px;
+        margin: 56px 0 56px 0;
+        display: flex;
+    }
+
+    .container{
+        height: auto;
+        padding: 16px;
+        border-radius: 10px;
+        background-color: white;
+        order: 2;
+    }
+
+    button{
+        border-radius: 10px;
+        padding: 10px 16px 10px 16px;
+        font-family: Lexend Deca;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: whitesmoke;
+        border: none;
+        width: 100%;
+    }
+
+    button:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        font-weight: 800;
+    }
+
+    button:active {
+        filter: brightness(1.2);
+    }
+
+    #bubbl{
+        background-image: linear-gradient(100deg,rgba(192, 140, 251),rgba(150, 57, 254));
+        margin-top: 32px;
+    }
+
+    #bubbl button{
+        background-color: rgb(123, 77, 218);
+    }
+
+    #ambev{
+        background-image: linear-gradient(100deg,rgba(70, 172, 240),rgba(15, 136, 217));
+    }
+
+    #ambev button{
+        background-color: rgb(42, 84, 145);
+    }
+
+    #volition{
+        background-image: linear-gradient(100deg,rgba(254, 160, 60),rgba(220, 119, 12));
+    }
+
+    #volition button {
+        background-color: rgb(232, 93, 0);
+    }
+
+    aside{
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        height: fit-content;
+    }
+
+    aside h2{
+        grid-column: span 2;
+    }
+
+    .milestone {
+        grid-column: 2;
+        margin: 0px 0 24px 0;
+    }
+
+    .date{
+        font-weight: 300;
+        font-size: 14px;
+        margin:0;
+    }
+
+    .milestone-description {
+        margin: 0;
+    }
+
+    aside img{
+        margin-bottom: 6px;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        align-self: flex-end;
+        grid-row: 2;
+    }
+
+    #adress, #phone, #email { 
+        max-width: 300px;
+    }
+
+    #adress i, #phone i, #email i{
+        padding: 0 0 0 8px;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        background-image: linear-gradient(100deg,rgba(196, 0, 203),rgba(245, 149, 48));
+        align-items:center;
+        color: white;
+        text-align: left;
+        padding: 60px;
+    }
+
+    footer h2{
+        grid-column: span 2;
+    }
+
+    footer a{
+        border-radius: 4px;
+        margin: 16px 0 16px 0;
+        font-family: Roboto;
+        font-weight: 400;
+        letter-spacing: .5px;
+    }
+
+    footer p {
+        font-weight: 300;
+    }
+
+    footer a:hover{ 
+        padding: 8px;
+        background-color: rgb(150, 57, 254);
+        font-weight: 600;
+    }
+
+    footer a:active{
+        background-color: rgb(91,0,193);
+        font-weight: 700;
+    }
+
+    .social{
+        grid-row: 2;
+        justify-self: end;
+        align-self: flex-end;
+        padding-bottom: 4px;
+    }
+
+    details {
+        display: none;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    body{
+        background-color: rgb(239, 239, 239);
+        margin: 0;
+    }
+
+    #hero-section{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 56px 1fr;
+        background-image: linear-gradient(100deg,rgba(196, 0, 203),rgba(245, 149, 48));
+        height: 900px;
+        align-content: center;
+        text-align: center;
+        padding: 16px;
+        grid-template-columns: 1; 
+    }
+
+    header{
+        align-content: center;
+    }
+
+    nav{
+        margin: 0;
+        grid-row: 1;
+    }
+
+    h1{
+        font-size: 36px;
+        color: rgb(255, 251, 242);
+    }
+
+    nav ul {
+        display: none;
+    }
+
+
+    #project-link:active {
+        color: white;
+        background-color: rgb(150, 57, 254);
+    }
+
+    #about-link:active {
+        color: white;
+        background-color: rgb(150, 57, 254);
+    }
+
+    #header-description{
+        font-size: 16px;
+        color: rgb(255, 251, 242);
+    }
+
+    h1, h2, h3{
+        font-family: Lexend Deca;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        margin-top: 0;
+    }
+
+    p{
+        font-family: Roboto;
+        line-height: 25.4px;
+    }
+
+    a{
+        color: rgb(255, 251, 242);
+        font-family:Lexend Deca;
+        border-radius: 4px;
+        text-decoration: none; 
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        margin: 24px 0 24px 0;
+        padding: 24px;
+        gap: 32px;
+        border-radius: 10px;
+    }
+
+    .container{
+        height: auto;
+        padding: 16px;
+        border-radius: 10px;
+        background-color: white;
+        order: 2;
+    }
+
+    button{
+        border-radius: 10px;
+        padding: 10px 16px 10px 16px;
+        font-family: Lexend Deca;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: whitesmoke;
+        border: none;
+        width: 100%;
+    }
+
+    button:active {
+        filter: brightness(1.2);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        font-weight: 800;
+    }
+
+    #bubbl{
+        background-image: linear-gradient(100deg,rgba(192, 140, 251),rgba(150, 57, 254));
+        margin-top: 32px;
+    }
+
+    #bubbl button{
+        background-color: rgb(123, 77, 218);
+    }
+
+    #ambev{
+        background-image: linear-gradient(100deg,rgba(70, 172, 240),rgba(15, 136, 217));
+    }
+
+    #ambev button{
+        background-color: rgb(42, 84, 145);
+    }
+
+    #volition{
+        background-image: linear-gradient(100deg,rgba(254, 160, 60),rgba(220, 119, 12));
+    }
+
+    #volition button {
+        background-color: rgb(232, 93, 0);
+    }
+
+    #bubbl{
+        margin-top: 0;
+    }
+
+    article img {
+        width: 100%;
+    }
+
+    aside{
+        display: none;
+    }
+
+    footer h2{
+        margin: 16px 0 16px 0;
+    }
+
+    main{
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+
+    #tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+        margin: 32px 16px 32px 16px;
+    }
+
+    #tabs button {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    #tabs a{
+        color:rgb(150, 57, 254);
+        text-decoration: underline;
+        font-weight: 500;
+    }
+
+    #tab-projects a{
+        width: 100%;
+        font-weight: 700;
+        color:white;
+        text-decoration: none;
+    }
+
+    #tab-projects {
+        background-color: rgb(150, 57, 254);
+    }
+
+    #tab-projects:active, #tab-timeline:active{
+        padding: 8px;
+        background-color: rgb(150, 57, 254);
+    }
+
+    #tabs a:active {
+        color: white;
+    }
+
+    #projects {
+        margin: 16px;
+    }
+
+    #projects h2{
+        display: none;
+    }
+
+    .contact{
+        gap: 24px;
+        align-self: flex-end;
+        grid-row: 2;
+    }
+
+    footer {
+        padding: 16px;
+        display: grid;
+        grid-template-columns: 1fr .2fr;
+        background-image: linear-gradient(100deg,rgba(196, 0, 203),rgba(245, 149, 48));
+        text-align: center;
+        color: white;
+        text-align: left;
+    }
+
+    footer h2{
+        grid-column: span 2;
+    }
+
+    footer p {
+        font-weight: 300;
+    }
+
+    footer a{
+        border-radius: 4px;
+        margin: 16px 0 16px 0;
+        font-family: Roboto;
+        font-weight: 500;
+        letter-spacing: .5px;
+    }
+
+
+    #phone, #adress {
+        margin-bottom:16px;
+    }
+
+    #phone p, #adress p, #email p {
+        padding:2px 0 2px 0;
+        margin: 0;
+    }
+
+    .social {
+        grid-row: 2;
+        align-self: end;
+        padding-bottom: 4px;
+        justify-self: end;
+    }
+
+    #adress, #phone, #email { 
+        width: auto;
+    }
+
+    #adress i, #phone i, #email i{
+        padding: 0 0 0 8px;
+    }
+
+    .dropdown-content {
+        width: 60%;
+        position: absolute;
+        right:0;
+        left:100;
+        top:100;
+        background-color: #f9f9f9;
+        margin-right: 16px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-radius: 4px;
+    }
+
+
+    details a{
+        color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 16px;
+    }
+
+    summary {
+        text-align: end;
+        list-style: none;
+    }
+
+    details i {
+        color: white;
+        position: relative;
+        padding: 16px 0px 0px 16px;
+    }
+
+    details:open.dropdown-content {
+        margin: 40px;
+    }
+
+
+    footer a:active{
+        padding: 8px;
+        background-color: rgb(91,0,193);
+        font-weight: 700;
+    }
+
+
+
+}
+
+
