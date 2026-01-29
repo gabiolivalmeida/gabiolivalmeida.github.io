@@ -98,7 +98,7 @@
     main{  
         margin: 32px 60px 60px 60px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 100px 1fr;
         column-gap: 0px;
     }
 
@@ -106,10 +106,9 @@
         grid-column: 1;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 16px;
         row-gap: 16px;
-        justify-items: center;
         padding-top: 24px;
+        justify-content: space-between;
     }
 
 
@@ -144,9 +143,13 @@
     #left-column {
         grid-column: 1;
     }
-
-    #right-column {
+    
+    #middle-spacer-column {
         grid-column: 2;
+    }
+    
+    #right-column {
+        grid-column: 3;
     }
 
     #right-column h3 {
@@ -160,7 +163,7 @@
 
     #main-photo img{
         object-fit: cover;
-        width: 82%;
+        width: 100%;
     }
 
     .education-history, .professional-history {
@@ -350,10 +353,9 @@
     #tools {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 16px;
         row-gap: 16px;
-        justify-content: center;
         padding: 24px 0 24px 0;
+        justify-content: space-around;
     }
 
 
