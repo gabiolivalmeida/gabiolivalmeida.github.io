@@ -31,6 +31,10 @@
         display: none;
     }
 
+    #current-page, #project-page {
+        font-size: clamp(20px, 1.25vw, 36px);
+    }
+
     a{
         color: rgb(255, 251, 242);
         font-family:Lexend Deca;
@@ -55,7 +59,7 @@
     }
 
     #header-description {
-        font-size: 24pt;
+        font-size: clamp(14px, 1.14vw, 28px);
         color: rgb(255, 251, 242);
     }
 
@@ -66,6 +70,7 @@
 
     nav ul {
         margin: 0;
+        padding: 0;
         list-style: none;
         text-align: center;
     }
@@ -79,7 +84,7 @@
 
     h1{
         margin: 0;
-        font-size: 64pt;
+        font-size: clamp(72px, 5vw, 120px);
         color: rgb(255, 251, 242);
     }
 
@@ -104,19 +109,15 @@
 
     #tools {
         grid-column: 1;
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 16px;
-        padding-top: 24px;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
     }
 
 
     .tool-icon {
-        width: 114px;
-        max-height: 132px;
+        width: auto;
         background-color: white;
-        justify-items: center;
         text-align: center;
         padding: 16px;
         border-radius: 4px;
@@ -132,7 +133,7 @@
     } */
 
     section h3 {
-        margin: 24px 0 0 0;
+        margin: 24px 0 16px 0;
         font-size: 20px;
     }
 
@@ -307,7 +308,7 @@
     }
 
     h1{
-        font-size: 36px;
+        font-size: clamp(24px, 9vw, 44px);
         color: rgb(255, 251, 242);
     }
 
@@ -316,7 +317,7 @@
     }
 
      #header-description{
-        font-size: 16px;
+        font-size: clamp(12px, 3.5vw, 16px);
         color: rgb(255, 251, 242);
     }
 
