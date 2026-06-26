@@ -197,6 +197,14 @@
         background-color: rgb(232, 93, 0);
     }
 
+    #bookfinder{
+        background-image: linear-gradient(100deg,rgba(23, 115, 148),rgba(10, 84, 112)); 
+    }
+    
+    #bookfinder button {
+        background-color: rgb(10, 84, 112);
+    }
+
     aside{
         display: grid;
         grid-template-columns: 36px 1fr;
@@ -479,6 +487,14 @@
         background-color: rgb(232, 93, 0);
     }
 
+    #bookfinder{
+        background-image: linear-gradient(100deg,rgba(23, 115, 148),rgba(10, 84, 112)); 
+    }
+
+    #bookfinder button {
+        background-color: rgb(10, 84, 112);
+    }
+
     aside{
         display: grid;
         grid-template-columns: 36px 1fr;
@@ -707,6 +723,14 @@
 
     #volition{
         background-image: linear-gradient(100deg,rgba(254, 160, 60),rgba(220, 119, 12));
+    }
+
+    #bookfinder{
+        background-image: linear-gradient(100deg,rgba(23, 115, 148),rgba(10, 84, 112)); 
+    }
+
+    #bookfinder button {
+        background-color: rgb(10, 84, 112);
     }
 
     #volition button {
