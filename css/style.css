@@ -175,6 +175,15 @@
     #bubbl{
         background-image: linear-gradient(100deg,rgba(192, 140, 251),rgba(150, 57, 254));
         margin-top: 32px;
+        position: relative;
+    }
+
+    #stamp{
+        width: 18%;
+        position: absolute;
+        top: -48px;
+        left: -48px;
+        z-index: 10;
     }
 
     #bubbl button{
@@ -465,6 +474,15 @@
     #bubbl{
         background-image: linear-gradient(100deg,rgba(192, 140, 251),rgba(150, 57, 254));
         margin-top: 32px;
+        position: relative;
+    }
+
+    #stamp{
+        width: 25%;
+        position: absolute;
+        top: -48px;
+        left: -48px;
+        z-index: 10;
     }
 
     #bubbl button{
@@ -739,6 +757,15 @@
 
     #bubbl{
         margin-top: 0;
+        position: relative;
+    }
+
+    #stamp{
+        width: 30%;
+        position: absolute;
+        top: -36px;
+        left: -36px;
+        z-index: 10;
     }
 
     article img {
